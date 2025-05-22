@@ -20,6 +20,6 @@ resource "aws_instance" "web" {
   }
 }
 module "sg" {
-  source  = "app.terraform.io/acme-demo/sg/aws"
+  source  = "app.terraform.io/ACME_Demo_Gourav/sg/aws"
   version = "1.0.0"
 }
