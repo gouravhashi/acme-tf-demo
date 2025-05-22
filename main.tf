@@ -14,7 +14,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = "ami-0c7217cdde317cfec" # Ubuntu 22.04 LTS
   #instance_type = var.instance_type
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   tags = {
     Name = "ACME-WebServer"
   }
