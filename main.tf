@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "=3.42.0"
+      version = "~> 5.0"
     }
   }
 }
@@ -13,7 +13,7 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   ami           = "ami-0c7217cdde317cfec" # Ubuntu 22.04 LTS
-  instance_type = "m5.large" # Expensive instance
+  instance_type = var.instance_type
   tags = {
     Name = "ACME-WebServer"
   }
