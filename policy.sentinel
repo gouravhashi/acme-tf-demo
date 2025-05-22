@@ -1,0 +1,11 @@
+import "tfplan/v2" as tfplan
+
+allowed_types = ["t3.micro", "t3.small"]
+
+main = rule {
+  all tfplan.resources.aws_instance as _, instances {
+    all instances as _, r {
+      r.applied.instance_type in allowed_types
+    }
+  }
+}
