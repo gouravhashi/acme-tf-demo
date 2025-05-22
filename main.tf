@@ -16,7 +16,7 @@ resource "aws_instance" "web" {
   #instance_type = var.instance_type
   instance_type = "t2.micro"
   tags = {
-    Name = "ACME-WebServer"
+    Name = "ACME-WebServer-New"
   }
 }
 module "demo" {
