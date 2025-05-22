@@ -19,7 +19,7 @@ resource "aws_instance" "web" {
     Name = "ACME-WebServer"
   }
 }
-module "sg" {
-  source  = "app.terraform.io/ACME_Demo_Gourav/sg/aws"
+module "demo" {
+  source  = "app.terraform.io/ACME_Demo_Gourav/demo/tf"
   version = "1.0.0"
 }
