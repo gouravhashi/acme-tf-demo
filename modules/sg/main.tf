@@ -1,6 +1,6 @@
-module "sg" {
-  source = "git::https://github.com/gouravhashi/acme-tf-demo.git//modules/sg?ref=main"
-}
+#module "sg" {
+  #source = "git::https://github.com/gouravhashi/acme-tf-demo.git//modules/sg?ref=main"
+#}
 module "web_sg" {
   source               = "gouravhashi/sg/aws"
   version              = "1.0.0"
